@@ -1,8 +1,18 @@
-where = input("you are in the lost forest . Go Left or Right ")
-if where == "right" :
-    while where == "right":
-         where = input("you are in the lost forest . Go Left or Right")
-elif where == "left":
-     print("you are out of the forest")
+secret = 5
+for i in range(1,11):
+    if i == secret:
+        print("found")
+        break
 else:
-     print("don't know")
+    print('not found')
+
+
+
+found = False
+secret = 67
+for i in range(1,11):
+    if i == secret:
+        print('found')
+        found = True
+if not found:
+    print('not found')
